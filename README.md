@@ -7,4 +7,4 @@ codecup contests submissions
   - [ ] react
     - [x] read-json
     - [x] timer hook
-    - [ ] tic-tac-toe
+    - [x] tic-tac-toe
