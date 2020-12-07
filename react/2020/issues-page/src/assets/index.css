@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  border-radius: 6px;
+  border: 1px solid #e1e4e8;
+  margin: 20px;
+  position: relative;
+}
+
+.box-header {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  display: flex;
+  padding: 20px;
+}
+
+.open-issues,
+.close-issues {
+  font-size: 22px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.open-issues.active,
+.close-issues.active {
+  opacity: 1;
+}
+
+.open-issues svg,
+.close-issues svg {
+  margin-right: 10px;
+}
+
+.issue {
+  font-weight: 600;
+  font-size: 22px;
+  padding: 20px;
+  border-top: 1px solid #eaecef;
+  display: flex;
+  align-items: center;
+}
+
+.issue svg {
+  margin-right: 10px;
+}
+
+.loading {
+  font-size: 22px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.1;
+}

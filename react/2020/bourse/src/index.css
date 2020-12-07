@@ -1,0 +1,124 @@
+html {
+  color: #dceaec;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/******** App classes ********/
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/******** stock classes ********/
+.stockContainer {
+  background-color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  color: black;
+  min-width: 400px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #18bb5c;
+  transform: rotate(-135deg);
+  margin-bottom: 8px;
+}
+.down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ff433d;
+  transform: rotate(-45deg);
+  margin-top: 8px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 21px;
+  box-sizing: border-box;
+  margin-top: 16px;
+}
+
+.percentage_down {
+  color: #ff433d;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.percentage_up {
+  color: #18bb5c;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.price {
+  color: #111;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+/******** chart classes ********/
+.chartContainer {
+  border-left: 4px solid gray;
+  border-bottom: 4px solid gray;
+  width: 80%;
+  display: flex;
+  justify-items: end;
+  align-items: flex-end;
+  padding: 0 16px;
+  height: 350px;
+  background: #00bcef24;
+  border-radius: 4px;
+}
+
+.chart {
+  height: 0;
+  min-height: 1px;
+  max-height: 400px;
+  width: 20px;
+  border-radius: 4px 4px 0 0;
+  margin: 0 0.1rem;
+}
+
+.chart_up {
+  background-color: #18bb5c;
+}
+.chart_down {
+  background-color: #ff433d;
+}
